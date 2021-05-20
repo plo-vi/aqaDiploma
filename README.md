@@ -1,5 +1,12 @@
-### Для запуска тестов необходимо:
-1. Запустить контейнеры командой 'docker-compose up -d'
-2. Запустить приложение командой 'java -jar ./artifacts/aqa-shop.jar' (по умолчанию приложение работает с базой MySQl. Для работы с базой PostgreSQL запустить приложение командой 'java -jar ./artifacts/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app')
-3. Запустить автотесты командой 'gradlew clean test' для Windows или './gradlew clean test' для *nix системы. (Для работы с базой PostgreSQL запустить автотесты командой 'gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/app' для Windows или './gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/app' для *nix системы.)
-4. Для создания отчета Allure запустить команду 'gradlew allureReport' и 'gradlew allureServe' для Windows или './gradlew allureReport' и './gradlew allureServe' для *nix системы.
+### Запуск тестов:
+#### Работа с базой данных MySQl
+1. 'docker-compose up -d' - *запуск контейнеров*
+2. 'java -jar ./artifacts/aqa-shop.jar' - *запуск приложения*
+3. 'gradlew clean test' - *запуск автотестов*
+4. 'gradlew allureReport', 'gradlew allureServe' - *создание отчета Allure*
+
+#### Работа с базой данных PostgreSQL
+1. 'docker-compose up -d' - *запуск контейнеров*
+2. 'java -jar ./artifacts/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app' - *запуск приложения*
+3. 'gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/app'- *запуск автотестов*
+4. 'gradlew allureReport', 'gradlew allureServe' - *создание отчета Allure*
