@@ -1,3 +1,12 @@
+# Дипломная работа
+
+## Документация:
+[План автоматизации](https://github.com/plo-vi/aqaDiploma/blob/master/Plan.md)
+
+[Отчет о тестировании](https://github.com/plo-vi/aqaDiploma/blob/master/Report.md)
+
+[Отчет по итогам автоматизации](https://github.com/plo-vi/aqaDiploma/blob/master/Summary.md)
+
 ### Запуск тестов:
 #### Работа с базой данных MySQl
 1. 'docker-compose up -d' - *запуск контейнеров*
